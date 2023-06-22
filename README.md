@@ -5,4 +5,5 @@ https://career-path-showcase.netlify.app/
 Check my website by clicking above
 
 Images:- 
+![Screenshot (1)](https://github.com/vanya-001/Resume/assets/115103924/f6952038-1abb-47b6-b986-9d25dc5e35ee)
 
