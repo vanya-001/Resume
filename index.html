@@ -13,6 +13,7 @@
         }
 
         .container {
+            overflow-x: auto;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -30,19 +31,10 @@
             font-weight: bold;
         }
 
-        h1, h2 {
-            color: #333;
-            text-align: center;
-        }
-
-        h1 {
-            margin-bottom: 20px;
-        }
-
         p {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
-        .operating ul{
+        /* .operating ul{
             
             list-style-type: none;
             padding-left: 0;
@@ -58,24 +50,25 @@
             color: #fff;
             padding: 5px 10px;
             border-radius: 3px;
-        }
+        } */
 
         .section {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         .section-title {
+            text-decoration: underline;
             font-weight: bold;
             font-size: larger;
         }
 
         .section-content {
-            margin-top: 5px;
+            margin-top: 2px;
             text-align:"justify";
         }
 
         .skills {
-            margin-top: 20px;
+            margin-top: 15px;
         }
 
         .skills ul {
@@ -119,18 +112,18 @@
         </div>
 
         <div class="section">
+            <p class="section-content">
             <h3 class="section-title">Education</h3>
-            <p class="section-content" style="overflow-x: auto;">
-            <table>
+            <table style="overflow-x: auto;">
                 <tr>
                     <th><strong>Year</strong></th>
                     <th><strong>Qualification/Degree</strong></th>
                     <th><strong>Board/University</strong></th>
-                    <th><strong>College/Institute</strong></th>
+                    <th><strong>College/School</strong></th>
                     <th><strong>Percentage/CGPA</strong></th>
                 </tr>
                 <tr>
-                    <td>2020-2024</td>
+                    <td>2020 - Present</td>
                     <td>Bachelor of Technology in CSE - specialization: 
                         <br>Artificial Intelligence and Machine Learning</td>
                     <td>UPES</td>
@@ -138,14 +131,14 @@
                     <td>8.35</td>
                 </tr>
                 <tr>
-                    <td>2018-2019</td>
+                    <td>2019 - 2020</td>
                     <td>12th</td>
                     <td>CBSE</td>
                     <td>St. Fidelis Senior Secondary School, <br> Aligarh.</td>
                     <td>7.9</td>
                 </tr>
                 <tr>
-                    <td>2016-2017</td>
+                    <td>2016 - 2018</td>
                     <td>10th</td>
                     <td>ICSE</td>
                     <td>Guru Nanak Fifth Centenary School, <br> Mussoorie.</td>
@@ -156,140 +149,145 @@
         </div>
 
         <div class="section-subjects">
-            <h3 class = section-title>Subject Electives</h3>
             <p class="section-content">
-            <ul>
-                <li>Artificial Intelligence and Machine Learning - <strong> Major</strong></li>
-                <li>DevOps -<strong> Minor</strong></li>
-                <li>Digital Marketing -<strong> Exploratory</strong></li>
-            </ul>
+                <h3 class = section-title>Subject Electives</h3>
+                <ul>
+                    <li>Artificial Intelligence and Machine Learning - <strong> Major</strong></li>
+                    <li>DevOps -<strong> Minor</strong></li>
+                    <li>Digital Marketing -<strong> Exploratory</strong></li>
+                </ul>
             </p>
         </div>
 
         <div class="section-subjects">
-            <h3 class = section-title>Work Experience</h3>
             <p class="section-content">
-            <ul>
-                <li> <strong> Machine Learning Intern - IBM</strong><br>
-                        01-06-2023 to currently working
-                        <br>
-                        Project – Designing a deep learning algorithm model to detect objects and their positions in real time video streams. <br>
-                        Algorithm used – yoloV8 on COCO dataset.
-                </li>
-            </ul>
+                <h3 class = section-title>Work Experience</h3>
+            
+                <ul>
+                    <li> <strong> Machine Learning Intern - IBM</strong><br>
+                            01-06-2023 to currently working
+                            <br>
+                            Project – Designing a deep learning algorithm model to detect objects and their positions in real time video streams. <br>
+                            Algorithm used – yoloV8 on COCO dataset.
+                    </li>
+                </ul>
             </p>
         </div>
 
-        <div class="section-projects">
-            <h3 class="section-title">Projects</h3>
-            <ul>
-                <li>
-                    <p>
-                    <strong>Minor Project 1:</strong> <br>
-                    <b>PackDrop - Implementing reverse supply chain by proposing 4th R- Return to the existing 3R principle for sustainable development.</b>
-                        <br>
-                    To create a portal as a promising solution for reducing packaging waste by acting as an intermediary between the customer and the production unit and facilitating the reverse supply chain and to increase awareness about sustainable development by considering the conventional 3r principle and along with that introducing a new r-return.</p>
-                </li>
-                <li>
-                    <p><strong>Minor Project 2:</strong> <br>
-                     <b>YouTube Transcript Summarizer</b>
-                        <br>
-                        Project – A chrome extension that gives you the summary of YouTube videos (Abstractive Summary)
-                        Algorithms –: HTML, CSS, BOOTSRAP, API, Hugging Face Transformer, Python.
-                    </p>
-                </li>
-                <li>
-                    <p><strong>Personal Projects</strong> <br>
-                    
-                     <b>Breast Cancer Classification using Neural Network </b>
-                        <br>
-                        Project – Model which predicts whether the patient has breast cancer or not.
-                        Algorithms – Matplotlib, NumPy, Pandas, Sklearn, Python.
-                    </p>
+        <div class="section-subjects">
+            <p class="section-content">
+                <h3 class="section-title">Projects</h3>
+                <ul>
+                    <li>
+                        <p>
+                        <strong>Minor Project 1:</strong> <br>
+                        <b>PackDrop - Implementing reverse supply chain by proposing 4th R- Return to the existing 3R principle for sustainable development.</b>
+                            <br>
+                        To create a portal as a promising solution for reducing packaging waste by acting as an intermediary between the customer and the production unit and facilitating the reverse supply chain and to increase awareness about sustainable development by considering the conventional 3r principle and along with that introducing a new r-return.</p>
+                    </li>
+                    <li>
+                        <p><strong>Minor Project 2:</strong> <br>
+                        <b>YouTube Transcript Summarizer</b>
+                            <br>
+                            Project – A chrome extension that gives you the summary of YouTube videos (Abstractive Summary) <br>
+                            Algorithms –: HTML, CSS, BOOTSRAP, API, Hugging Face Transformer, Python.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Personal Projects</strong> <br>
+                        
+                        <b>Breast Cancer Classification using Neural Network </b>
+                            <br>
+                            Project – Model which predicts whether the patient has breast cancer or not. <br>
+                            Algorithms – Matplotlib, NumPy, Pandas, Sklearn, Python.
+                        </p>
 
-                    <p> <b>Movie Recommendation System </b>
-                        <br>
-                        Project – Model that analyzes data on movie, user and their interaction and generates recommendations based on that analysis.
-                        Algorithms – TF-IDF Vectorizer, Cosine Similarity, NumPy, Pandas, Python.
-                    </p>
+                        <p> <b>Movie Recommendation System </b>
+                            <br>
+                            Project – Model that analyzes data on movie, user and their interaction and generates recommendations based on that analysis. <br>
+                            Algorithms – TF-IDF Vectorizer, Cosine Similarity, NumPy, Pandas, Python.
+                        </p>
 
-                    <p> <b>Online Cv</b>
-                        <br>
-                        Project – A project that showcases my professional achievements, skills, education and work experience.
-                        Algorithms – HTML, CSS.
+                        <p> <b>Online Cv</b>
+                            <br>
+                            Project – A project that showcases my professional achievements, skills, education and work experience. <br>
+                            Algorithms – HTML, CSS.
 
-                    </p>
-                </li>
-            </ul>
-            
+                        </p>
+                    </li>
+                </ul>
+            </p>
         </div>
 
         <div class="section skills">
-            <h3 class="section-title"> <strong>Languages</strong></h3>
-            <ul>
-                <li>JAVA</li>
-                <li>Python</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>BootStrap</li>
-            </ul>
+            <p class="section-content">
+                <h3 class="section-title"> <strong>Languages</strong></h3>
+                <ul>
+                    <li>JAVA</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>BootStrap</li>
+                </ul>
+            </p>
         </div>
 
-        <div class="section operating">
-            <h3 class="section-title"> <strong>Operating Systems</strong></h3>
-            <ul>
-                <li>Windows</li>
-                <li>Linux</li>
-            </ul>
-        </div>
-        <div class="section operating">
-            <h3 class="section-title"> <strong>Software</strong></h3>
-            <ul>
-                <li>Git</li>
-                <li>SQL</li>
-            </ul>
+        <div class="section skills">
+            <p class="section-content">
+                <h3 class="section-title"> <strong>Operating Systems</strong></h3>
+                <ul>
+                    <li>Windows</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+            <div class="section skills">
+                <h3 class="section-title"> <strong>Software</strong></h3>
+                <ul>
+                    <li>Git</li>
+                    <li>SQL</li>
+                </ul>
+        </p>
         </div>
 
         <div class="section-subjects">
-            <h3 class = section-title>Certifications</h3>
             <p class="section-content">
-            <ul>
-                <li>Introduction to Data Science – Cisco</li>
-                    <li>Introduction to DevOps by IBM – Coursera</li>
-                    <li>API Fundamental Student Expert – Postman </li>
-                    <li>Programming with JavaScript by Meta – Coursera</li>
-                    <li>Introduction to Front-End Development by Meta – Coursera</li>
-                    <li>Bits and Bytes of Computer Networking by Google – Coursera</li>
-                    <li>Introduction to Artificial Intelligence by IBM – Coursera</li>
-            </ul>
+                <h3 class = section-title>Certifications</h3>
+                <ul>
+                    <li>Introduction to Data Science – Cisco</li>
+                        <li>Introduction to DevOps by IBM – Coursera</li>
+                        <li>API Fundamental Student Expert – Postman </li>
+                        <li>Programming with JavaScript by Meta – Coursera</li>
+                        <li>Introduction to Front-End Development by Meta – Coursera</li>
+                        <li>Bits and Bytes of Computer Networking by Google – Coursera</li>
+                        <li>Introduction to Artificial Intelligence by IBM – Coursera</li>
+                </ul>
             </p>
         </div>
         <div class="section-subjects">
-            <h3 class = section-title>Achievements</h3>
             <p class="section-content">
-            <ul>
-                <li>Minor Project 1 | Project Expo, UPES | Top 5</li>
-                <li>Merit based scholarship </li>
-                <li>Silver Medalist | 10m Air Rifle Shooting | District level</li>
-                <li>NCC Cadet | High School</li>
-            </ul>
+                <h3 class = section-title>Achievements</h3>
+                <ul>
+                    <li>Minor Project 1 | Project Expo, UPES | Top 5</li>
+                    <li>Merit based scholarship </li>
+                    <li>Silver Medalist | 10m Air Rifle Shooting | District level</li>
+                    <li>NCC Cadet | High School</li>
+                </ul>
             </p>
         </div>
 
-        <div class="section-projects">
-            <h3 class="section-title">Volunteer Work</h3>
+        <div class="section-subjects">
             <p class="section-content">
-            <ul>
-                <li><strong>Udaan Society</strong> <br>
-                Social Media Coordinator <br>
-                01-06-2023 to 31-06-2023 <br>
-                Handling all their social media platforms and working as an editor.
-                </li>
-            </ul>
+                <h3 class="section-title">Volunteer Work</h3>
+                <ul>
+                    <li><strong>Udaan Society</strong> <br>
+                    Social Media Coordinator <br>
+                    01-06-2023 to 31-06-2023 <br>
+                    Handling all their social media platforms and working as an editor.
+                    </li>
+                </ul>
             </p>
         </div>
-
     </div>
 </body>
 </html>
