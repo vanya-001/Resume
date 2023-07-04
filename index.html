@@ -13,10 +13,46 @@
                 transform: translateX(300px);
             }
         }
+        @media only screen and (max-width: 200px){
+
+            body {
+                font-family:'Times New Roman', Times, serif;
+                background-image: radial-gradient(#dbdbdb #00002b);
+                color: #333;
+                text-align: justify;
+            }
+            table{
+                overflow-x: auto;
+                border: 1px solid black;
+                text-align: center;
+                display:ruby-base-container;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 0 auto;
+                padding: 20px;
+                border-radius: 5px;
+                border-collapse: collapse;
+                /* font-size:small; */
+            }
+            /* th{
+                display: block;
+                width: 100%;
+            } */
+
+            .container {
+            overflow-x: auto;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        }
 
         body {
             font-family:'Times New Roman', Times, serif;
-            background-color: #f1f1f1;
+            background-image: radial-gradient(#da7b7b #9a9acf);
             color: #333;
             text-align: justify;
         }
@@ -26,17 +62,10 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        :hover{
-            background: orange;
-            /* width: 300px;
-            height: 150px; */
-            animation: moveToRight 2s ease-in-out;
-            animation-delay: 1000ms;
-        }
+
         .container1 { 
             text-align: left;
             font-weight: bold;
@@ -50,23 +79,6 @@
         p {
             margin-bottom: 5px;
         }
-        /* .operating ul{
-            
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .operating {
-            margin-top: 10px;
-        }
-
-        .operating li{
-            display: inline-block;
-            margin-right: 10px;
-            background-color: #333;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 3px;
-        } */
 
         .section {
             margin-bottom: 5px;
@@ -100,14 +112,21 @@
             padding: 5px 10px;
             border-radius: 3px;
         }
-        table,th,td{
+        table{
+            overflow-x: auto;
             border: 1px solid black;
             text-align: center;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 8px;
+            border: 1px solid black;
         }
     </style>
 </head>
 <body>
     <div class="container">
+    
     <p>
         <img src="Resume\v1.jpg" alt="My Photo" class="container1"  width="150" height="150" style="float: right;">
         <p class="container12">Vanya Maheshwari</p> 
@@ -128,39 +147,44 @@
         </div>
 
         <div class="section">
-            <p class="section-content">
+            <!-- <p class="section-content"> -->
             <h3 class="section-title">Education</h3>
             <table style="overflow-x: auto;">
-                <tr>
-                    <th><strong>Year</strong></th>
-                    <th><strong>Qualification/Degree</strong></th>
-                    <th><strong>Board/University</strong></th>
-                    <th><strong>College/School</strong></th>
-                    <th><strong>Percentage/CGPA</strong></th>
-                </tr>
-                <tr>
-                    <td>2020 - Present</td>
-                    <td>Bachelor of Technology in CSE - specialization: 
-                        <br>Artificial Intelligence and Machine Learning</td>
-                    <td>UPES</td>
-                    <td>UPES, <br> Dehradun.</td>
-                    <td>8.35</td>
-                </tr>
-                <tr>
-                    <td>2019 - 2020</td>
-                    <td>12th</td>
-                    <td>CBSE</td>
-                    <td>St. Fidelis Senior Secondary School, <br> Aligarh.</td>
-                    <td>7.9</td>
-                </tr>
-                <tr>
-                    <td>2016 - 2018</td>
-                    <td>10th</td>
-                    <td>ICSE</td>
-                    <td>Guru Nanak Fifth Centenary School, <br> Mussoorie.</td>
-                    <td>8.4</td>
-                </tr>
-            </p>
+                <col><col><col><col><col>
+                <thead>
+                    <tr>
+                        <th><strong>Year</strong></th>
+                        <th><strong>Qualification/Degree</strong></th>
+                        <th><strong>Board/University</strong></th>
+                        <th><strong>College/School</strong></th>
+                        <th><strong>Percentage/CGPA</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2020 - Present</td>
+                        <td>Bachelor of Technology in CSE - specialization: 
+                            <br>Artificial Intelligence and Machine Learning</td>
+                        <td>UPES</td>
+                        <td>UPES, <br> Dehradun.</td>
+                        <td>8.35</td>
+                    </tr>
+                    <tr>
+                        <td>2019 - 2020</td>
+                        <td>12th</td>
+                        <td>CBSE</td>
+                        <td>St. Fidelis Senior Secondary School, <br> Aligarh.</td>
+                        <td>7.9</td>
+                    </tr>
+                    <tr>
+                        <td>2016 - 2018</td>
+                        <td>10th</td>
+                        <td>ICSE</td>
+                        <td>Guru Nanak Fifth Centenary School, <br> Mussoorie.</td>
+                        <td>8.4</td>
+                    </tr>
+                </tbody>
+            <!-- </p> -->
         </table>
         </div>
 
@@ -311,6 +335,6 @@
                 </ul>
             </p>
         </div>
-    </div>
+        </div>
 </body>
 </html>
