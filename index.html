@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
     <style>
-        @keyframes moveToRight {
+        @keyframes gradientAnimation {
             0% {
-                transform: translateX(0px);
+                background-image: radial-gradient(hsla(158, 77%, 61%, 0.466), #fafafa);
+            }
+            50% {
+                background-image: radial-gradient(hsla(180, 82%, 55%, 0.466), #fafafa);
             }
             100% {
-                transform: translateX(300px);
+                background-image: radial-gradient(hsla(158, 77%, 61%, 0.466), #fafafa);
             }
         }
-        @media only screen and (max-width: 200px){
+        @media only screen and (max-width: 480px){
 
             body {
                 font-family:'Times New Roman', Times, serif;
@@ -21,22 +24,13 @@
                 color: #333;
                 text-align: justify;
             }
-            table{
-                overflow-x: auto;
-                border: 1px solid black;
-                text-align: center;
-                display:ruby-base-container;
-                width: 100%;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                margin: 0 auto;
-                padding: 20px;
-                border-radius: 5px;
-                border-collapse: collapse;
-                
-            }
             
+            table{
+                display: block;
+            }
+            tbody tr:not(:nth-child(1)) {
+                display: none;
+            }      
 
             .container {
             overflow-x: auto;
@@ -44,23 +38,53 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .header {
+                font-size: 14px;
+            }
+
+            .image{
+                display: none;
+            }
         }
+
+        .header {
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-align: left;
+            padding: 2px;
+        }
+
+        .header a {
+            /* color: #fff; */
+            text-decoration: none;
         }
 
         body {
             font-family:'Times New Roman', Times, serif;
-            background-image: radial-gradient(#da7b7b #9a9acf);
+            background-image:  #fafafa;
             color: #333;
             text-align: justify;
+            
         }
         
         .container {
+            /* background-image: radial-gradient(hsla(158, 77%, 61%, 0.466), #fafafa);
+            animation: gradientAnimation 5s infinite; */
+            background-image: url("https://img.freepik.com/free-photo/black-marble-patterned-texture-background-marble-thailand-abstract-natural-marble-black-white-design_1253-917.jpg?size=626&ext=jpg");
+            /* opacity: 0; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             overflow-x: auto;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color : white;
+
         }
 
         .container1 { 
@@ -71,6 +95,12 @@
             text-align: left;
             font-size: x-large;
             font-weight: bold;
+        }
+
+        .image{
+            float: right; 
+            /* border-radius: 25%; */
+            margin-top: 20px;
         }
 
         p {
@@ -105,8 +135,8 @@
         .skills li {
             display: inline-block;
             margin-right: 10px;
-            background-color: #333;
-            color: #fff;
+            background-color: white;
+            color: black;
             padding: 5px 10px;
             border-radius: 3px;
             margin-bottom: 10px;
@@ -117,28 +147,28 @@
         }
         table{
             overflow-x: auto;
-            border: 1px solid black;
+            border: 1px solid rgb(116, 127, 137);
             text-align: center;
             border-collapse: collapse;
         }
         th,td{
             padding: 8px;
-            border: 1px solid black;
+            border: 1px solid rgb(116, 127, 137);
         }
     </style>
 </head>
 <body>
     <div class="container">
     
-        <p>
-            <img src="Resume\v1.jpg" alt="My Photo" class="container1"  width="150" height="150" style="float: right;">
+        <p class="section-content">
+            <img src="Resume\v1.jpg" alt="My Photo" class="image"  width="150" height="150">
             <p class="container12">Vanya Maheshwari</p> 
-            <p class="container1">{Adaptive; Creative; Versatile}</p>
+            <strong>{Adaptive; Creative; Versatile}</strong>
         </p>
-        <p>
-            <strong>LinkedIn : </strong><a href="https://www.linkedin.com/in/vanya-maheshwari-183817225/"> vanya-maheshwari-183817225</a> <br>
-            <strong>GitHub : </strong><a href="https://github.com/vanya-001">vanya-001</a> <br>
-            <strong>Email ID : </strong><a href="mailto:vanimaheshwari19@gmail.com">vanimaheshwari19@gmail.com</a> <br>
+        <p class="header">
+            <strong>LinkedIn : </strong><a class="header" href="https://www.linkedin.com/in/vanya-maheshwari-183817225/"> vanya-maheshwari-183817225</a> <br>
+            <strong>GitHub : </strong><a class="header" href="https://github.com/vanya-001">vanya-001</a> <br>
+            <strong>Email ID : </strong><a class="header" href="mailto:vanimaheshwari19@gmail.com">vanimaheshwari19@gmail.com</a> <br>
             <strong>Phone No. :</strong>
             +91 8218099387
         </p>
@@ -276,7 +306,7 @@
                                 <br>
                                 <i><u><b>Description</b></u></i> – A project that showcases my professional achievements, skills, education and work experience. <br>
                                 <i><b><u>Text Stacks used</u></b></i> – HTML, CSS. <br>
-                                <i><u><b>Link</b></u></i> - <a href="https://career-path-showcase.netlify.app/">https://career-path-showcase.netlify.app/</a>  
+                                <i><u><b>Link</b></u></i> - <a class="header" href="https://career-path-showcase.netlify.app/">https://career-path-showcase.netlify.app/</a>  
                             </li>
                         </ol>
                     </li>
