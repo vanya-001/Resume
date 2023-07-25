@@ -85,7 +85,7 @@
         .section-title {
             text-decoration: underline;
             font-weight: bold;
-            font-size: larger;
+            font-size:larger;
         }
 
         .section-content {
@@ -110,6 +110,10 @@
             padding: 5px 10px;
             border-radius: 3px;
             margin-bottom: 10px;
+        }
+
+        .title{
+            font-size: medium;
         }
         table{
             overflow-x: auto;
@@ -189,22 +193,22 @@
 
         <div class="section">
             <p class="section-title">Subject Electives</p>
-            <p class="section-content">
+            <div class="section-content">
                 <!-- <h3 class = section-title>Subject Electives</h3> -->
-                <ul>
+                <ul class="section-content">
                     <li>Artificial Intelligence and Machine Learning - <strong> Major</strong></li>
                     <li>DevOps -<strong> Minor</strong></li>
                     <li>Digital Marketing -<strong> Exploratory</strong></li>
                 </ul>
-            </p>
+            </div>
         </div>
 
         <div class="section-subjects">
             <p class="section-title">Work Experience</p>
-            <p class="section-content">
+            <div class="section-content">
                 <!-- <h3 class = section-title>Work Experience</h3> -->
                 
-                <ul>
+                <ul class="section-content">
                     <li> <strong><u>Machine Learning Intern - IBM</u></strong><br>
                             <i>June, 2023 to currently working</i>
                             <br>
@@ -212,67 +216,70 @@
                             <i><b><u>Text Stacks used</u></b></i> – yoloV8 on COCO dataset.
                     </li>
                 </ul>
-            </p>
+            </div>
         </div>
 
         <div class="section-subjects">
             <div class="section-content">
                 <!-- <h3 class="section-title">Projects</h3> -->
                 <p class="section-title">Projects</p>
-                    <li>
-                        <p>
-                            <strong>Minor Project 1</strong> <br>
+                    <li> 
+                        <u class="title"><strong>Minor Project 1</strong></u> 
+                        <ul class="section-content">
                             <b>PACKDROP - Introducing 4th R: Return for Sustainable Development.</b>
                             <br>
                             <i><u><b>Description</b></u></i> – Model which predicts whether the patient has breast cancer or not.
                             <br>
                             <i><b><u>Text Stacks used</u></b></i>– HTML, CSS, Bootstrap, JavaScript, Django,    Machine Learning Models – Carbon Footprint Prediction (Multiple Linear Regression), Reward Prediction (Multilayer Perceptron)
-                        </p>
+                        </ul>
                     </li>
                     <li>
-                        <p><strong>Minor Project 2</strong> <br>
+                        <u class="title"><strong>Minor Project 2</strong></u>
+                        <ul class="section-content">
                         <b>YOUTUBE TRANSCRIPT SUMMARIZER </b>
                             <br>
                             <i><u><b>Description</b></u></i>  – A chrome extension that gives you the summary of YouTube videos (Abstractive Summary) <br>
                             <i><b><u>Text Stacks used</u></b></i> – HTML, CSS, BOOTSRAP, API, Hugging Face Transformer, Python.
-                        </p>
+                        </ul>
                     </li>
                     <li>
-                        <p><strong>Personal Projects</strong> <br>
-                        
-                            <b>EXPENSE TRACKER </b>
+                        <u class="title"><strong>Personal Projects</strong></u>
+                        <ol class="section-content"> 
+                            <li>                     
+                                <b>EXPENSE TRACKER </b>
+                                <br>
+                                <i><u><b>Description</b></u></i> – A full-stack web application that allow users to track their expenses. <br>
+                                <i><b><u>Text Stacks used</u></b></i> – API, MongoDB, Expressjs, Reactjs, Nodejs, Postman.
+                            </li>
                             <br>
-                            <i><u><b>Description</b></u></i> – A full-stack web application that allow users to track their expenses. <br>
-                            <i><b><u>Text Stacks used</u></b></i> – API, MongoDB, Expressjs, Reactjs, Nodejs, Postman.
-                        </p>
-
-                        <p>
-                            <b>JAVA - SNAKE GAME</b>
+                            <li>
+                                <b>JAVA - SNAKE GAME</b>
+                                <br>
+                                <i><u><b>Description</b></u></i> – An interactive game for users which uses OOP, GUI and event handling for user-friendly gameplay. <br>
+                                <i><u><b>Text Stacks used</b></u></i> – Java, OOP, Swing.
+                            </li>
                             <br>
-                            <i><u><b>Description</b></u></i> – An interactive game for users which uses OOP, GUI and event handling for user-friendly gameplay. <br>
-                            <i><u><b>Text Stacks used</b></u></i> – Java, OOP, Swing.
-                        </p>
-
-                        <p><b>BREAST CANCER CLASSIFICATION USING NEURAL NETWORK </b>
+                            <li>
+                                <b>BREAST CANCER CLASSIFICATION USING NEURAL NETWORK </b>
+                                <br>
+                                <i><u><b>Description</b></u></i> – Model which predicts whether the patient has breast cancer or not. <br>
+                                <i><b><u>Text Stacks used</u></b></i> – Matplotlib, NumPy, Pandas, Sklearn, Python.
+                            </li>
                             <br>
-                            <i><u><b>Description</b></u></i> – Model which predicts whether the patient has breast cancer or not. <br>
-                            <i><b><u>Text Stacks used</u></b></i> – Matplotlib, NumPy, Pandas, Sklearn, Python.
-                        </p>
-
-                        <p> <b>MOVIE RECOMMENDATION SYSTEM </b>
+                            <li> <b>MOVIE RECOMMENDATION SYSTEM </b>
+                                <br>
+                                <i><u><b>Description</b></u></i> – Model that analyzes data on movie, user and their interaction and generates recommendations based on that analysis. <br>
+                                <i><b><u>Text Stacks used</u></b></i> – TF-IDF Vectorizer, Cosine Similarity, NumPy, Pandas, Python.
+                            </li>
                             <br>
-                            <i><u><b>Description</b></u></i> – Model that analyzes data on movie, user and their interaction and generates recommendations based on that analysis. <br>
-                            <i><b><u>Text Stacks used</u></b></i> – TF-IDF Vectorizer, Cosine Similarity, NumPy, Pandas, Python.
-                        </p>
-
-                        <p> <b>ONLINE CV</b>
-                            <br>
-                            <i><u><b>Description</b></u></i> – A project that showcases my professional achievements, skills, education and work experience. <br>
-                            <i><b><u>Text Stacks used</u></b></i> – HTML, CSS. <br>
-                            <i><u><b>Link</b></u></i> - <a href="https://career-path-showcase.netlify.app/">https://career-path-showcase.netlify.app/</a>  
-                        </p>
+                            <li> <b>ONLINE CV</b>
+                                <br>
+                                <i><u><b>Description</b></u></i> – A project that showcases my professional achievements, skills, education and work experience. <br>
+                                <i><b><u>Text Stacks used</u></b></i> – HTML, CSS. <br>
+                                <i><u><b>Link</b></u></i> - <a href="https://career-path-showcase.netlify.app/">https://career-path-showcase.netlify.app/</a>  
+                            </li>
+                        </ol>
                     </li>
-                
             </div>
         </div>
 
