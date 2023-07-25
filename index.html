@@ -79,6 +79,7 @@
 
         .section {
             margin-bottom: 5px;
+            
         }
 
         .section-title {
@@ -88,7 +89,7 @@
         }
 
         .section-content {
-            margin-top: 2px;
+            margin-top: 0;
             text-align:"justify";
         }
 
@@ -125,18 +126,18 @@
 <body>
     <div class="container">
     
-    <p>
-        <img src="Resume\v1.jpg" alt="My Photo" class="container1"  width="150" height="150" style="float: right;">
-        <p class="container12">Vanya Maheshwari</p> 
-        <p class="container1">{Adaptive; Creative; Versatile}</p>
-    </p>
-    <p>
-        <strong>LinkedIn : </strong><a href="https://www.linkedin.com/in/vanya-maheshwari-183817225/"> vanya-maheshwari-183817225</a> <br>
-        <strong>GitHub : </strong><a href="https://github.com/vanya-001">vanya-001</a> <br>
-        <strong>Email ID : </strong><a href="mailto:vanimaheshwari19@gmail.com">vanimaheshwari19@gmail.com</a> <br>
-        <strong>Phone No. :</strong>
-        +91 8218099387
-    </p>
+        <p>
+            <img src="Resume\v1.jpg" alt="My Photo" class="container1"  width="150" height="150" style="float: right;">
+            <p class="container12">Vanya Maheshwari</p> 
+            <p class="container1">{Adaptive; Creative; Versatile}</p>
+        </p>
+        <p>
+            <strong>LinkedIn : </strong><a href="https://www.linkedin.com/in/vanya-maheshwari-183817225/"> vanya-maheshwari-183817225</a> <br>
+            <strong>GitHub : </strong><a href="https://github.com/vanya-001">vanya-001</a> <br>
+            <strong>Email ID : </strong><a href="mailto:vanimaheshwari19@gmail.com">vanimaheshwari19@gmail.com</a> <br>
+            <strong>Phone No. :</strong>
+            +91 8218099387
+        </p>
 
         <div class="section">
             <p class="section-title">About</p>
@@ -145,7 +146,8 @@
         </div>
 
         <div class="section">
-            <h3 class="section-title">Education</h3>
+            <!-- <h3 class="section-title">Education</h3> -->
+            <p class="section-title">Education</p>
             <table style="overflow-x: auto;">
                 <col><col><col><col><col>
                 <thead>
@@ -185,9 +187,10 @@
         </table>
         </div>
 
-        <div class="section-subjects">
+        <div class="section">
+            <p class="section-title">Subject Electives</p>
             <p class="section-content">
-                <h3 class = section-title>Subject Electives</h3>
+                <!-- <h3 class = section-title>Subject Electives</h3> -->
                 <ul>
                     <li>Artificial Intelligence and Machine Learning - <strong> Major</strong></li>
                     <li>DevOps -<strong> Minor</strong></li>
@@ -197,9 +200,10 @@
         </div>
 
         <div class="section-subjects">
+            <p class="section-title">Work Experience</p>
             <p class="section-content">
-                <h3 class = section-title>Work Experience</h3>
-            
+                <!-- <h3 class = section-title>Work Experience</h3> -->
+                
                 <ul>
                     <li> <strong><u>Machine Learning Intern - IBM</u></strong><br>
                             <i>June, 2023 to currently working</i>
@@ -212,9 +216,9 @@
         </div>
 
         <div class="section-subjects">
-            <p class="section-content">
-                <h3 class="section-title">Projects</h3>
-                <ul>
+            <div class="section-content">
+                <!-- <h3 class="section-title">Projects</h3> -->
+                <p class="section-title">Projects</p>
                     <li>
                         <p>
                             <strong>Minor Project 1</strong> <br>
@@ -268,14 +272,14 @@
                             <i><u><b>Link</b></u></i> - <a href="https://career-path-showcase.netlify.app/">https://career-path-showcase.netlify.app/</a>  
                         </p>
                     </li>
-                </ul>
-            </p>
+                
+            </div>
         </div>
 
         <div class="section skills">
             <p class="section-content">
-                <h3 class="section-title"> <strong>Languages</strong></h3>
-                <ul>
+                <p class="section-title"> <strong>Languages</strong></p>
+                <ul class="section-content">
                     <li>JAVA</li>
                     <li>Python</li>
                     <li>JavaScript</li>
@@ -292,14 +296,14 @@
 
         <div class="section skills">
             <p class="section-content">
-                <h3 class="section-title"> <strong>Operating Systems</strong></h3>
-                <ul>
+                <p class="section-title"> <strong>Operating Systems</strong></p>
+                <ul class="section-content">
                     <li>Windows</li>
                 </ul>
             </div>
             <div class="section skills">
-                <h3 class="section-title"> <strong>Softwares</strong></h3>
-                <ul>
+                <p class="section-title"> <strong>Softwares</strong></p>
+                <ul class="section-content">
                     <li>Git</li>
                     <li>SQL</li>
                     <li>Postman</li>
@@ -309,9 +313,10 @@
         </div>
 
         <div class="section-subjects">
+            <p class = section-title>Certifications</p>
             <p class="section-content">
-                <h3 class = section-title>Certifications</h3>
-                <ul>
+                
+                <ul class="section-content">
                     <li>Introduction to Data Science – <b>Cisco</b></li>
                     <li>Introduction to DevOps by IBM – <b>Coursera</b></li>
                     <li>API Fundamental Student Expert – <b>Postman</b> </li>
@@ -323,31 +328,34 @@
                 </ul>
             </p>
         </div>
-        <div class="section-subjects">
-            <p class="section-content">
-                <h3 class = section-title>Achievements</h3>
-                <ul>
+
+        <div class="section-subjects">            
+            <div class="section-content">
+                <p class = section-title>Achievements </p>
+                <ul class="section-content">
                     <li>Minor Project 1 | Project Expo, UPES | Top 5</li>
                     <li>Merit based scholarship </li>
                     <li>Silver Medalist | 10m Air Rifle Shooting | District level</li>
                     <li>NCC Cadet | High School</li>
                     <li>Verified Badges | Data Science – CISCO | API Fundamental - POSTMAN | DevOps - IBM</li>
                 </ul>
-            </p>
+            </div>
+            
         </div>
 
         <div class="section-subjects">
-            <p class="section-content">
-                <h3 class="section-title">Volunteer Work</h3>
-                <ul>
+            
+            <div class="section-content">
+                <p class="section-title">Volunteer Work</p>
+                <ul class="section-content">
                     <li><strong><u>Udaan Society</u></strong> <br>
                     Social Media Coordinator <br>
                     <i>June 2021 to July 2021</i> <br>
                     Handling all their social media platforms and working as an editor.
                     </li>
                 </ul>
-            </p>
+            </div>
         </div>
-        </div>
+    </div>
 </body>
 </html>
